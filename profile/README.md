@@ -1,47 +1,144 @@
-# 🪐 Negentropy-Laby (逆熵实验室)
+# Negentropy Lab
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Architecture-Zero--Trust-black?style=for-the-badge&logo=shield" alt="Zero-Trust" />
-  <img src="https://img.shields.io/badge/Runtime-Agent_OS-blue?style=for-the-badge&logo=linux" alt="Agent OS" />
-  <img src="https://img.shields.io/badge/Memory-DuckDB-yellow?style=for-the-badge&logo=databricks" alt="DuckDB" />
-  <img src="https://img.shields.io/badge/Protocol-MCP-purple?style=for-the-badge&logo=json" alt="MCP" />
-  <img src="https://img.shields.io/badge/Governance-Code--as--Law-red?style=for-the-badge&logo=scales" alt="Code-as-Law" />
-</div>
+**Agent Infra / Runtime Architect building trustworthy, commercial-grade AI agents for regulated and complex real-world domains.**
 
-<br>
+I work on Agent Runtime, Tool System, Memory System, Evaluation, Observability, and LLM Safety - turning LLMs from one-off API calls into auditable, replayable, production-ready, and commercially deployable agent systems.
 
-> *"Re-engineering the thermodynamic state of digital survival. Moving AI from passive scripts to Zero-Trust, self-evolving Operating Systems."*
-
-## 📜 The Manifesto
-
-The next frontier of Artificial Intelligence is not just about model parameter scaling; it is about the **Runtime Contract**. At Negentropy-Laby, we are architecting the foundational infrastructure for enterprise-grade Agentic Workflows. 
-
-We enforce **Code-as-Law** through strict cryptographic boundaries, physical sandboxing, and immutable memory banks. We build systems where Multi-Agent Swarms operate under deterministic, constitutional constraints—achieving true **Entropy Reduction** in complex, high-concurrency environments.
-
-## 🏗️ Core Architecture Pillars
-
-- **[I] The Runtime Contract Layer:** Deep convergence of Session, Approval, Trace, and Agent Identity into a unified standard facade.
-- **[II] Zero-Trust Execution:** Ephemeral Micro-VMs and ECDSA P-256 signatures ensuring mathematically verifiable and secure execution paths.
-- **[III] Dual-Layer Memory Bank:** DuckDB-backed physicalized session contexts, optimizing sparse attention for 1B+ token/day throughputs.
-- **[IV] Constitution-Driven Development (CDD):** Dynamic `allow/approve/deny` state machines resolving multi-agent conflicts via thermodynamic weighted voting.
-
-## 🗄️ Featured Initiatives
-
-### 🚀 [OpenSlack](https://github.com/Negentropy-Laby/openslack) *(Flagship)*
-Our industrial-grade implementation of the Agent OS paradigm. Featuring an automated GitHub watch-daemon, PR deadlock resolution, and YAML-driven Constitutional paths. It proves that the Runtime Contract is not just a theory, but an executable reality.
-
-### 📜 [agent-runtime-contract](#) *(RFC & Specs)*
-The core interfaces, Schemas, and data structure definitions for multi-agent interaction. Exported via TypeScript/Pydantic, establishing the standard for trace, audit, and cost observability.
-
-### 🛡️ [zero-trust-agent-sandbox](#) *(PoC)*
-A Proof of Concept demonstrating cryptographic hashes and micro-kernel isolation for Agents. Intercepting unauthorized Shell/IO calls to build an impenetrable execution guardrail.
-
-### 🧠 [duckdb-memory-bank](#) *(Infrastructure)*
-A high-performance wrapper utilizing DuckDB as an analytical foundation for transcript materialization, replacing flat RAG with structural, SQL-queryable Agent Session Contexts.
+我专注于 Agent Runtime、Tool System、Memory System、Evaluation / Observability 与 LLM Safety，目标是将大模型从单次 API 调用推进为可运行、可审计、可评测、可复用的行业 Agent 系统。
 
 ---
 
-<div align="center">
-  <b>Built for the Autonomous Self.</b> <br>
-  <i>Authored by the Chief Architect at Negentropy-Laby</i>
-</div>
+## What I Build
+
+| Layer | What I Build | Outcome |
+|---|---|---|
+| **Agent Infra / Eval** | Evaluation, Observability, Trace / Audit / Cost, Replay, Benchmark, Cost Governance | Make agents measurable, debuggable, and production-ready |
+| **Agent Harness / Runtime** | Runtime Contract, RunState, Tool System, Memory Bank, Workflow Runtime, RuntimePolicyEngine | Make agents controllable, replayable, and auditable |
+| **MaaS (Model-as-a-Service) / Industry Systems** | RAG / Agent workflows, Data Products, Benchmarks, Solution Packages | Package agents into deployable, reusable industry systems |
+
+---
+
+## Technical Core: Aby Assistant / Agent Harness
+
+Aby Assistant is my experimental **Agent Harness / Runtime Contract Layer**.
+
+It explores how to make agents stateful, governable, observable, and portable across **CLI**, **Daemon**, and **API / SDK** delivery modes.
+
+**Core components**
+
+- `RunState` - task state and lifecycle
+- `ApprovalRequest` - human-in-the-loop approval
+- `RuntimeEvent` - structured runtime event stream
+- `TraceStore` - replayable execution trace
+- `AgentBundle` - portable agent asset package
+- `Agent Identity` - verifiable runtime identity
+- `RuntimePolicyEngine` - allow / approve / deny governance
+- `Trace / Audit / Cost` - observability and cost attribution
+
+---
+
+## Featured Case Study: Trustworthy Mobility Agent System
+
+A case study on turning regulated mobility data into auditable AI agents.
+
+The project explores how to transform multi-source mobility data into high-quality datasets and trustworthy agent workflows for:
+
+- **ODD Expansion Assessment** - where, when, and under what conditions autonomous driving can operate
+- **Operational Safety Monitoring** - whether fleets and operators are running safely and compliantly
+- **Accident Evidence Chain** - what happened before, during, and after an incident
+
+The system design includes:
+
+- High-quality dataset factory
+- Trusted data space, de-identification, and controlled data access
+- ODD evaluation agents
+- Operational safety monitoring agents
+- Accident traceability agents
+- Agent tool-call trajectory datasets
+- Regulatory reports and data product APIs
+
+该项目以智能驾驶为强监管行业样板，验证如何将一手运行数据、道路交通数据、气象环境数据、自动驾驶日志和监管处置数据，加工为可脱敏、可评测、可 Agent 调用、可监管决策的高质量数据集，并进一步形成行业 Benchmark、风险 API、事故证据包和可信 Agent 工具服务。
+
+---
+
+## Current Focus
+
+- **Agent Runtime / Harness**: Runtime Contract, RunState, Tool System, Agent Identity, Workflow Runtime
+
+- **Agent Evaluation / Observability**: Trace / Audit / Cost, task replay, benchmark, tool-call success rate, cost and latency monitoring
+
+- **Memory & Context Management**: Core + Memory Bank, long-term memory, session context, context routing, memory recall strategy
+
+- **LLM Safety & Governance**: RuntimePolicyEngine, tool approval, de-identification, zero-trust runtime boundary
+
+- **Commercial-grade Industry Agents**: Turning high-value real-world scenarios into auditable workflows, benchmarks, data products, and reusable agent systems
+
+---
+
+## Featured Repositories
+
+| Repository | Focus |
+|---|---|
+| `agent-runtime-contract` | Runtime Contract, RunState, RuntimeEvent, TraceStore, AgentBundle |
+| `aby-assistant-harness` | CLI / Daemon / Workflow Runtime, Tool System, Memory, RuntimePolicyEngine |
+| `agent-eval-observability` | Trace, Replay, Benchmark, Task Success, Tool-call Success, Cost |
+| `memory-bank-context-runtime` | Core + Memory Bank, Session Context, Memory Routing |
+| `runtime-policy-engine` | Tool Approval, De-identification, LLM Safety, Audit |
+| `trustworthy-mobility-agent-case-study` | ODD Agent, Operational Safety Agent, Accident Traceability Agent, Data Products |
+
+---
+
+<details>
+<summary><strong>Technical Keywords</strong></summary>
+
+### Agent Runtime
+
+RunState, RuntimeEvent, ApprovalRequest, TraceStore, AgentBundle, Agent Identity, Runtime Contract, Session / Conversation Management
+
+### Tool System
+
+MCP, ToolPluginManifest, Function / Tool Calling, Shell / File / Git / API Governance, Tool Approval, Error Replay
+
+### Memory System
+
+Core + Memory Bank, Long-term Memory, Session Context, Context Compression, Retrieval-Augmented Memory, User / Project Profile
+
+### Evaluation / Observability
+
+Trace / Audit / Cost, Benchmark, E2E Testing, Task Replay, Tool-call Success Rate, Task Success Rate, Latency, Cost, Output Quality
+
+### Agent Infra / Platform
+
+Agent Worker, API / SDK, Multi-agent Orchestration, Managed Agent, Runtime Sandbox, Multi-model Routing, Cost Governance
+
+### Workflow / Scheduling
+
+CLI, Daemon, Background Workers, Lease Heartbeat, Pipeline, Parallel, Phase, Failure Recovery, Long-running Task
+
+### Multimodal / Cross-device
+
+RuntimeEvent, Tool Result, GUI Agent, Device Capability Abstraction, Browser Automation, VLM Input, Cross-device Execution
+
+### LLM Safety
+
+Permission Approval, De-identification, Prompt Injection Defense, Path Isolation, Tool Approval, Rate Limiting, Zero-trust Runtime Boundary
+
+### MaaS (Model-as-a-Service) / Solution Layer
+
+RAG, Agent Workflow, Model Selection, Evaluation, Data Products, Industry Benchmark, Solution Package
+
+</details>
+
+---
+
+## Contact
+
+Open to selected conversations and collaborations around:
+
+- Agent Infra / Runtime / Eval
+- Tool System / Memory System
+- LLM Safety & Governance
+- Commercial-grade AI Agents
+- Regulated industry AI systems
+
+For collaboration or role discussions, please reach out via GitHub.
