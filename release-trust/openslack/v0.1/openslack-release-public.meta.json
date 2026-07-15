@@ -5,7 +5,8 @@
   "keyId": "f0284711604bbe1f774dcdb2d17f11c4bd2dd7ca78dcf2f0c430c8e34aebe1d4",
   "fileSha256": "3983561dd02051d02ef032381bdc216c199826899bbb3df9d8afc7f1d2145b10",
   "releases": [
-    "v0.1.0"
+    "v0.1.0",
+    "v0.1.1"
   ],
   "createdAt": "2026-07-14T17:41:47Z",
   "rotation": "A rotated key requires a new reviewed trust record; existing records remain immutable."
